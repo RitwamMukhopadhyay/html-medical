@@ -1,0 +1,38 @@
+h1 {
+    color: teal;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+h3 {
+    color: darkorange;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    font-size: large;
+}
+
+article {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.red {
+    color: darkred;
+}
+
+nav {
+    font-family: cursive;
+    text-align: center;
+}

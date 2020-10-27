@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>INDEX</title>
+
+    <script>
+        function search_disease() {
+            let input = document.getElementById("searchbar").value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName("disease");
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                } else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+
+    <style>
+        #searchbar {
+            margin-left: 15%;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        input[type=text] {
+            width: 30%;
+            -webkit-transition: width 0.15s ease-in-out;
+            transition: width 0.15s ease-in-out;
+        }
+        
+        input[type=text]:focus {
+            width: 70%;
+        }
+        
+        #list {
+            font-size: 1.5em;
+            margin-left: 90px;
+        }
+        
+        .disease {
+            display: list-item;
+        }
+        
+        h1 {
+            text-align: center;
+            color: teal;
+        }
+        
+        p {
+            font-weight: bolder;
+        }
+        
+        #list {
+            font-weight: bolder;
+        }
+        
+        body {
+            background-color: white;
+            font-family: 'Roboto', cursive;
+            font-weight: 100;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="searchbar" onkeyup="search_disease()" type="text" name="search" placeholder="search disease..">
+    <div>
+        <h1>
+            Diseases and its medication by Ritwam Mukhopadhyay
+        </h1>
+    </div>
+    <br>
+    <p>
+        Select the disease/condition for more information
+    </p>
+    <nav id="list">
+        <li class="disease"><a href=" arthritis/arthritis.html">Arthritis</a></li>
+        <li class="disease"><a href="heart_attack/attack.html">Heart Attack</a></li>
+        <li class="disease"><a href="cancer/cancer.html">Cancer</a></li>
+    </nav>
+
+</body>
+
+</html>

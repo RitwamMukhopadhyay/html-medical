@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+    text-size-adjust: 100%;
+    cursor: auto;
+    font-size: 17px;
+    line-height: 1.15;
+    font-family: "Proxima Nova", -apple-system, system-ui, system-ui, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: #231f20;
+    background: white;
+}
+
+.background {
+    background-image: url("https://img.freepik.com/free-photo/white-watercolor-paper-texture-background_88281-3862.jpg?size=626&ext=jpg");
+}
+
+body {
+    background-size: cover;
+    background-color: white;
+    font-family: 'Roboto', cursive;
+    font-weight: 100;
+}
+
+h1 {
+    color: teal;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: darkslategrey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.gray {
+    color: grey;
+}
